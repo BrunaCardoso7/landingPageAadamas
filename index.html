@@ -82,28 +82,24 @@
             </div>
         </section>
         <section id="form_user">
-            <h2 id="form_text">ficou interessados pelos nossos serviços? entre em contato conosco</h2>
+            <h2 id="form_text"> <b id="colorGray"> ficou interessados pelos nossos serviços?</b> <b id="colorGreen"> entre em contato conosco</b></h2>
             <form action="arquivo.php">
 
                 <div class="styleForm">
                     <label for="usuario_nome">usuário</label>
-                    <input type="text" name="usuário_nome" id="usuário_nome">
+                    <input type="text" name="usuário_nome" id="usuário_nome" placeholder="Nome completo...">
                 </div>
 
                 <div class="styleForm">
-                    <label for="usuario_senha">senha</label>
-                    <input type="password" name="usuário_senha" id="usuário_senha">
-                </div>
-
-                <div class="styleForm">
-                    <label for="usuário_email">E-mail</label>
-                    <input type="email" name="usuário_email" id="usuário_email">
+                    <label for="usuário_email">E -mail</label>
+                    <input type="email" name="usuário_email" id="usuário_email" placeholder="email...">
                 </div>
 
                 <div class="styleForm">
                     <label for="usuário_box"></label>
-                    <textarea name="mensagem" id="mensagem" cols="40" rows="10"></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Digite o assunto aqui..."></textarea>
                 </div>
+                <input type="button" value="Enviar email" id="btn2">
             </form>
         </section>
     </main>
