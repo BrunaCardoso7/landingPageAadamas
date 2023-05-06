@@ -38,9 +38,10 @@ header{
 #navbar{
     display: flex;
     align-items: center; 
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
     margin: 10px 0;
+    width: 95%;
 }
 #container_apresentação{
     height: 100vh;
@@ -50,10 +51,11 @@ header{
     font-size: 2.5rem;
     font-family: var(--first-font);
     color: var(--gray-color);
+    margin-left: 10px;
     /* transform: translate(-60%); */
 }
 #icon_menuburguer{
-    height: 4.5vh;
+    height: 4vh;
     /* transform: translate(-0%); */
 }
 /* conteúdo principal do header */
@@ -72,9 +74,9 @@ header{
 #textApresentation{
     font-family: var(--second-font);
     text-align: center;    
-    width: 280px;
+    width: 350px;
     margin-top: 35px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .color_blue{
@@ -86,11 +88,12 @@ header{
 }
 /* butão */
 #btn{
-    margin-top: 40px;
+    margin-top: 80px;
     border: none;
     background-color: var(--redDark-color);
     border-radius: 100px;
-    padding: 10px 28px;
+    width: 300px;
+    padding: 15px 20px;
     cursor: pointer;
 }
 #btn a{
@@ -98,7 +101,7 @@ header{
     text-decoration: none;
     font-family: var(--second-font);
     font-weight: 300;
-    font-size: 17px;
+    font-size: 1.3rem;
     width: 100%;
     height: 100%;
 }
@@ -149,34 +152,35 @@ header{
     width: 270px;
 }
 /* segunda sesão */
-/* #servico{
+#servico{
     height: 100vh;
     width: 100%;
 
-} */
+}
 .text_cards2{
     color: var(--redDark-color);
     text-align: center;
     font-family: var(--second-font);
     font-size: 1.5rem;
+    padding-top: 100px;
 }
-/* #atuacoes{
+#atuacoes{
     padding-left: 30px;
-}   */
+}  
 
-/* .text_h3{
+.text_h3{
     color: darkgreen;
     font-family: var(--second-font);
     text-align: left;
     margin-top: 10px;
-    font-size: 0.5rem;
-} */
-/* .text_card2{
+    
+}
+.text_card2{
     padding-top: 10px;
     text-align: left;
     font-family: var(--second-font);
-    width: 200px;
-} */
+    width: 350px;
+}
 /* sessão dos formulários */
 #form_user{
     height: 100vh;
