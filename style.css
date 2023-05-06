@@ -21,15 +21,15 @@
     --grayclear-color: #D9D9D9;
 }
 html body{
-    width: 100vw;
-    height: auto;
+    height: 100vh;
+    width: 100%;
 }
 .sumir{
     display: none;
 }
 /* nav bar estilização */
 header{
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 #cabecalho{
     border-bottom: 3px solid var(--redDark-color);
@@ -41,7 +41,10 @@ header{
     gap: 30px;
     margin: 10px 0;
 }
-
+#container_apresentação{
+    height: 100vh;
+    width: 100%;
+}
 #logoEmpresa{
     font-size: 2.5rem;
     font-family: var(--first-font);
@@ -145,27 +148,34 @@ header{
     width: 270px;
 }
 /* segunda sesão */
-#servico{
+/* #servico{
     height: 100vh;
     width: 100%;
-;
-}
-#atuacoes{
-    padding-left: 30px;
-}  
 
-.text_h3{
+} */
+.text_cards2{
+    color: var(--redDark-color);
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+}
+/* #atuacoes{
+    padding-left: 30px;
+}   */
+
+/* .text_h3{
     color: darkgreen;
     font-family: var(--second-font);
     text-align: left;
     margin-top: 10px;
-}
-.text_card2{
+    font-size: 0.5rem;
+} */
+/* .text_card2{
     padding-top: 10px;
     text-align: left;
     font-family: var(--second-font);
-    width: 350px;
-}
+    width: 200px;
+} */
 /* sessão dos formulários */
 #form_user{
     height: 100vh;
