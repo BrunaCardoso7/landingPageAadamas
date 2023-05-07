@@ -92,7 +92,24 @@ header{
     height: 300px;
     width: 300px;
     margin-top: 70px;
+    transform: translate(0px);
+    animation: float 2s ease-out infinite;
 }
+@keyframes float{
+    0%{
+        transform: translate(0px)
+    }
+    50%{
+        transform: translate(-8px);
+    }
+    50%{
+        transform: translate(8px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
 /* texto */
 #textApresentation{
     font-family: var(--second-font);
