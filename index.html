@@ -12,15 +12,19 @@
     <header>
         <nav id="cabecalho">
             <div id="navbar">
-                <h1 id="logoEmpresa">Adamas</h1>
-                <a href="#"><img src="image/menu-button-of-three-horizontal-lines.png" alt="" id="icon_menuburguer"></a>
-                <ul class="none sumir">
-                    <li>Home</li>
-                    <li>Quem somos</li>
-                    <li>Serviços</li>
-                    <li>Contate-nos</li>
-                </ul>
+                <h1 class="logoEmpresa">Adamas</h1>
+                <a href="#"><img src="image/menu-button-of-three-horizontal-lines.png" alt="" id="icon_menuburguer" onclick="abrirMenu()"></a>
+                
                 </div>
+                
+                <menu class="nav">
+                    <ul class="items_navbar sumir" id="menu">
+                        <li class="line"><a href="#">Home</a></li>
+                        <li class="line"><a href="#quemSomos">Quem somos</a></li>
+                        <li class="line"><a href="#servico">Serviços</a></li>
+                        <li class="line"><a href="#form_user">Contate-nos</a></li>
+                    </ul>
+                </menu>
             </div>
         </nav>
             <section id="container_apresentação">
@@ -66,19 +70,31 @@
             
                 <h2 class="text_cards2">Serviços e atuações</h2>
             <div id="atuacoes">
-                <h3 class="text_h3">Gestão empresarial</h3>
-                <p class="text_card2">para empresas que precisam identificar
-                oportunidades de crescimento ou mesmo solucionar erros
-                no direcionamento dos negócios.</p>
-                <h3 class="text_h3">Recursos humanos</h3>
-                <p class="text_card2">Uma consultoria voltada aos recursos humanos auxilia a liderança a identificar
-                demandas e dificuldades da equipe, assim como as melhorias necessárias na gestão de pessoas.</p>
-                <h3 class="text_h3">Marketing digital</h3>
-                <p class="text_card2">Vamos te auxiliar a construir um planejamento estratégico
-                para que sua empresa ganhe visibilidade no mercado e fique ainda mais próxima dos clientes.</p>
-                <h3 class="text_h3">Vendas e finanças</h3>
-                <p class="text_card2">Te auxiliamos a criar estratégias, avaliar indicadores e potencializar a atração de leads de venda, além de Controlar
-                 o fluxo de caixa, capital de giro, investimentos e gastos</p>
+                <div class="container">
+                    <div class="conteiner_atuacoes">
+                        <img src="image/profit.png" alt="" class="imgSize">
+                        <h3 class="text_h3" id="blue">Gestão empresarial</h3>
+                        
+                    </div>
+                    <div class="conteiner_atuacoes">
+                        <img src="image/promotion.png" alt="" class="imgSize">
+                        <h3 class="text_h3" id="yellow">Recursos humanos</h3>
+                        
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="conteiner_atuacoes">
+                        <img src="image/smartphone.png" alt="" class="imgSize">
+                        <h3 class="text_h3" id="purple">Marketing digital</h3>
+                        
+                    </div>
+                    <div class="conteiner_atuacoes">
+                        <img src="image/layers.png" alt="" class="imgSize">
+                        <h3 class="text_h3" id="pink">Vendas e finanças</h3>
+                    </div>
+                </div>
+                <p id="text_sessao">Vamos te auxiliar a construir um planejamento estratégico para que sua empresa
+                    ganhe visibilidade no mercado e fique ainda mais próxima dos clientes.</p>
             </div>
         </section>
         <section id="form_user">
@@ -103,8 +119,27 @@
             </form>
         </section>
     </main>
-    <footer>
-
+    <footer id="rodape">
+        <div id="containeFooter">
+            <h1 class="logoEmpresa">Adamas</h1>
+            <div id="redes_sociais">
+                <p id="text_rodape">siga-nos nas redes sociais</p>
+                <div id="cont_img">
+                    <img src="image/whatsapp.png" alt="" class="iconSize">
+                    <img src="image/facebook.png" alt="" class="iconSize">
+                    <img src="image/instagram.png" alt="" class="iconSize">
+                </div>
+            </div>
+        </div>
     </footer>
+    <script>
+        function abrirMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

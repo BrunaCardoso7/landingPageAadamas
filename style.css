@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,300;1,500;1,600&display=swap');
 
 /* mobile first */
+.flex{
+    display: flex;
+}
 /* estilização principal */
 *{
     margin: 0;
@@ -10,8 +13,10 @@
     box-sizing: border-box;
     position: relative;
     list-style: none;
+    text-decoration: none
 
 }
+
 :root{
     --first-font:'Anton';   
     --second-font:'Poppins';
@@ -25,8 +30,22 @@ html body{
     height: 100vh;
     width: 100%;
 }
+.nav{
+    font-family: var(--second-font);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.527);
+    width: 100vw;
+    margin: 1px 0;
+    height: 30px;
+}
 .sumir{
-    display: none;
+    display:none;
 }
 /* nav bar estilização */
 header{
@@ -46,8 +65,9 @@ header{
 #container_apresentação{
     height: 100vh;
     width: 100%;
+    border: inset 1px 1px 10px black;
 }
-#logoEmpresa{
+.logoEmpresa{
     font-size: 2.5rem;
     font-family: var(--first-font);
     color: var(--gray-color);
@@ -111,6 +131,7 @@ header{
     width: 100vw;
     background-color: var(--grayclear-color);
     padding-bottom: 100px;
+    box-shadow: inset 1px 1px 10px black;
 }
 .imgSize{
     padding-top: 10px;
@@ -127,12 +148,13 @@ header{
 .text_cards{
     font-family: var(--second-font);
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     letter-spacing: -2px;
     font-weight: bolder;
     color: var(--redDark-color);
     padding-top: 80px;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.43);
 }
 .card{
     display: flex;
@@ -144,6 +166,7 @@ header{
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.548);
     
 }
 .text_card{
@@ -153,6 +176,9 @@ header{
     width: 270px;
 }
 /* segunda sesão */
+.container{
+    display: flex;
+}
 #servico{
     height: 100vh;
     width: 100%;
@@ -164,12 +190,13 @@ header{
     font-family: var(--second-font);
     font-size: 1.7rem;
     letter-spacing: -1px;
-    padding-top: 100px;
-    padding-left: 30px;
+    padding-top: 60px;
+    padding-left: 0px;
     font-weight: bold;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.43);
 }
 #atuacoes{
-    padding-left: 30px;
+    padding-left: 0px;
 }  
 
 .text_h3{
@@ -179,12 +206,51 @@ header{
     margin-top: 10px;
     letter-spacing: -1px;
     font-weight: bold;
+    
+    
 }
-.text_card2{
-    padding-top: 10px;
-    text-align: left;
+#blue{
+    color: #557DFF;
+}
+#yellow{
+    color: rgb(173, 173, 11);
+}
+#purple{
+    color: purple;
+}
+#pink{
+    color: rgb(247, 118, 140);
+}
+.conteiner_atuacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(178, 190, 206);
+    padding: 0px;
+    width: 190px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.container{
+    margin-top: 70px;
+}
+.text_cards2{
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    margin-bottom: 70px;
+    border-bottom: 3px solid rgb(178, 190, 206);
+}
+#text_sessao{
+    font-size: 1.3rem;
     font-family: var(--second-font);
-    width: 350px;
+    width: 400px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 /* sessão dos formulários */
 #form_user{
@@ -258,3 +324,32 @@ header{
     color: var(--blue-color);
     
 } */
+/* footer */
+#rodape{
+    border-top: 6px solid var(--redDark-color);
+    padding-bottom: 10px;
+}
+.iconSize{
+    height: 30px;
+}
+#text_rodape{
+    font-family: var(--second-font);
+    color: #541010;
+    text-align: center;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+#cont_img{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#redes_sociais{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+#containeFooter{
+    margin-right: 10px;
+    display: flex;
+    
+}
