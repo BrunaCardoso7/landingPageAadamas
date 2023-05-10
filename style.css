@@ -405,7 +405,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #b6b5b5;
+    background-color: #dbd9d9;
     width: 280px;
     height: 400px;
     border-radius: 5px;
@@ -432,20 +432,22 @@ header{
     text-align: center;
 }
 #avaliacoes{
-    background-color: #505050;
+    background-color: #a9a8a8;
     padding: 40px 0;
 }
 #text_ava{
-    color: var(--redDark-color);
+    color: white;
     font-family: var(--second-font);
-    width: 300px;
+    width: 370px;
     font-weight: 800;
     letter-spacing: -2px;
     text-align: center;
     padding: 10px;
-    font-size: 30px;
+    font-size: 40px;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.493);
+
 }
 .span{
-    color: green;
+    color: rgb(21, 233, 21);
+    font-weight: bold;
 }
