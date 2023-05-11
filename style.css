@@ -133,9 +133,9 @@ header{
 #textApresentation{
     font-family: var(--second-font);
     text-align: center;    
-    width: 350px;
+    width: 400px;
     margin-top: 35px;
-    font-size: 1.4rem;
+    font-size: 1.8em;
 }
 
 .color_blue{

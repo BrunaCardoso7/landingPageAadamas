@@ -10,7 +10,7 @@
     }
     .conteiner_nav{
         display: flex;
-        gap: 20%;
+        gap: 5%;
         align-items: center;
         width: 100%;
         margin-left: 30px;
@@ -26,6 +26,34 @@
         justify-content: center;
         align-items: center;
 
+    }
+    #imgApresentacao{
+        height: 300px;
+        width: 300px;
+        
+        transform: translate(0px);
+        animation: float 2s ease-out infinite;
+    }
+    #textApresentation{
+        font-family: var(--second-font);
+        padding-right: 85px;    
+        width: 450px;
+        margin-top: 35px;
+        font-size: 1.4rem;
+    }
+    #btn{
+        margin-top: 80px;
+        border: none;
+        background-color: var(--redDark-color);
+        border-radius: 100px;
+        width: 300px;
+        padding: 15px 40px;
+        cursor: pointer;
+        margin-left: 90px;
+    }
+    #text_sessao{
+        font-size: 1.8em;
+        width: 700px;
     }
     #linha{
         padding-right: 10px;
