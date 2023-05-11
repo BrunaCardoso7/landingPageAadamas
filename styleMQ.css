@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
     #icon_menuburguer{
         display: none;
     }
@@ -10,14 +10,22 @@
     }
     .conteiner_nav{
         display: flex;
-        width: 80vw;
-        margin: 0px;
-        margin-right: 20px;
+        gap: 20%;
+        align-items: center;
+        width: 100%;
+        margin-left: 30px;
     }
     .logoEmpresa{
-        font-size: 2rem;
-        margin: 0 30px;
-        padding-right: 90%;
+        font-size: 300%;
+        margin: 0;
+        padding-right: 0%;
+        
+    }
+    #apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
     #linha{
         padding-right: 10px;
@@ -29,12 +37,14 @@
     .items_navbar{
         display: inline-block;
         width: 80vw;
+        padding-right: 2%;
     }
     .line{
         width: auto;
         display: inline-block;
         margin-right: 20px;
         background-color: white;
+        font-size: 120%;
         
     }
     .conteinerNav{
@@ -43,8 +53,48 @@
         margin: auto;
 
     }
+    
+    #cont2{
+        font-size: 140%;
+        width: 130%;
+        
+    }
+
+    
 
 }
-@media screen and (min-width: 1024px) {
-    /* estilos para desktop */
+@media screen and (min-width: 1100px) {
+   /* cards */
+   .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    height: 350px;
+    width: 300px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.548);
+    
+   }
+   #container_cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid white;
+   }
+   .text_cards{
+    font-family: var(--second-font);
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: -2px;
+    font-weight: bolder;
+    color: var(--redDark-color);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.43);
+    }
 }
