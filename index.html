@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="styleMQ.css">
     <title>Adamas-Monte a sua melhor experiência de negócio aqui</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <nav id="cabecalho">
-            <div id="navbar">
-                <h1 class="logoEmpresa">Adamas</h1>
-                <a href="#"><img src="image/menu-button-of-three-horizontal-lines.png" alt="" id="icon_menuburguer" onclick="abrirMenu()"></a>
-                
+            <div class="conteiner_nav">
+                <div id="navbar">
+                    <h1 class="logoEmpresa">Adamas</h1>
+                    <a href="#"><img src="image/menu-button-of-three-horizontal-lines.png" alt="" id="icon_menuburguer" onclick="abrirMenu()"></a>
                 </div>
                 
-                <menu class="nav">
-                    <ul class="items_navbar sumir" id="menu">
-                        <li class="line"><a href="#">Home</a></li>
-                        <li class="line"><a href="#quemSomos">Quem somos</a></li>
-                        <li class="line"><a href="#servico">Serviços</a></li>
-                        <li class="line"><a href="#form_user">Contate-nos</a></li>
-                    </ul>
-                </menu>
+                
+                    <menu class="nav">
+                        <div class="conteinerNav">
+                            <ul class="items_navbar sumir" id="menu">
+                                <li class="line"><a href="#">Home</a></li>
+                                <li class="line"><a href="#quemSomos">Quem somos</a></li>
+                                <li class="line"  id="linha"><a href="#servico">Serviços</a></li>
+                                <li class="line"><a href="#form_user">Contate-nos</a></li>
+                            </ul>
+                        </div>
+                    </menu>
             </div>
+        </div>
         </nav>
             <section id="container_apresentação" class="ani">
                 <div id="apresentacao">
@@ -186,6 +190,13 @@
         </div>
     </footer>
     <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 600){
+                menu.style.display = "block"
+            }else{
+                menu.style.display = "none"
+            }
+        }
         function abrirMenu(){
             if(menu.style.display == 'block'){
                 menu.style.display = 'none'

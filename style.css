@@ -36,13 +36,17 @@ html body{
     justify-content: center;
     width: 100vw;
 }
+#menu{
+    border-top: 3px solid var(--redDark-color)
+}
 .line{
     display: flex;
     justify-content: center;
-    border: 1px solid rgba(128, 128, 128, 0.527);
+    border: none;
     width: 100vw;
-    margin: 1px 0;
+    margin: 0px 0;
     height: 30px;
+    background-color: rgba(215, 215, 215, 0.32);
 }
 a{
     color: #505050;
@@ -74,7 +78,7 @@ header{
 .logoEmpresa{
     font-size: 2.5rem;
     font-family: var(--first-font);
-    color: var(--gray-color);
+    color: var(--redDark-color);
     margin-left: 10px;
     /* transform: translate(-60%); */
 }
@@ -282,6 +286,7 @@ header{
     border-bottom: 3px solid rgb(178, 190, 206);
 }
 #text_sessao{
+    margin: auto;
     font-size: 1.3rem;
     font-family: var(--second-font);
     width: 400px;

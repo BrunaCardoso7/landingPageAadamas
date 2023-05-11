@@ -1,3 +1,50 @@
-@media screen {
-    
+@media screen and (min-width: 600px){
+    #icon_menuburguer{
+        display: none;
+    }
+    #menu{
+        border-top: none;
+    }
+    #cabecalho{
+        margin: 0px;
+    }
+    .conteiner_nav{
+        display: flex;
+        width: 80vw;
+        margin: 0px;
+        margin-right: 20px;
+    }
+    .logoEmpresa{
+        font-size: 2rem;
+        margin: 0 30px;
+        padding-right: 90%;
+    }
+    #linha{
+        padding-right: 10px;
+    }
+    #linha:nth-child(3){
+        border-right: 2px solid black;
+        height: 0%;
+    }
+    .items_navbar{
+        display: inline-block;
+        width: 80vw;
+    }
+    .line{
+        width: auto;
+        display: inline-block;
+        margin-right: 20px;
+        background-color: white;
+        
+    }
+    .conteinerNav{
+        width: 80vw;
+        align-items: center;
+        margin: auto;
+
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    /* estilos para desktop */
 }
