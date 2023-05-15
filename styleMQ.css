@@ -10,7 +10,7 @@
     }
     .conteiner_nav{
         display: flex;
-        gap: 5%;
+        gap: 19%;
         align-items: center;
         width: 100%;
         margin-left: 30px;
@@ -93,6 +93,20 @@
 }
 @media screen and (min-width: 1100px) {
    /* cards */
+   .conteinerNav{
+    padding-left: 30%;
+   }
+   .line{
+    width: auto;
+    display: inline-block;
+    margin-right: 20px;
+    background-color: white;
+    font-size: 1.4em;
+    }
+    .line:hover{
+        color:rgb(116, 116, 253)
+    }
+   
    .card{
     display: flex;
     flex-direction: column;
@@ -104,6 +118,7 @@
     margin: 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.548);
+    cursor: pointer;
     
    }
    #container_cards{
